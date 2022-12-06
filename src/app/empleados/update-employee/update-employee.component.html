@@ -1,0 +1,21 @@
+<h3>Editar Empleado</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">Nombre Completo</label>
+      <input type="text" class="form-control" id="Name" required [(ngModel)]="employee.name" name="Name">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Direccion</label>
+      <input type="text" class="form-control" id="direccion" required [(ngModel)]="employee.direccion" name="direccion">
+    </div>
+
+    <div class="form-group">
+      <label for="name">Telefono</label>
+      <input type="text" class="form-control" id="telefonoId" required [(ngModel)]="employee.telefono" name="telefonolId">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
